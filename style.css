@@ -1,0 +1,101 @@
+body {
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    background-color: #f7f9fc;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+.game {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px 40px;
+    max-width: 400px;
+    text-align: center;
+}
+
+.game__title {
+    font-family: 'Chakra Petch', sans-serif;
+    color: #007BFF;
+}
+
+.game__message {
+    margin: 20px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.game__input {
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px 0;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    width: 80%;
+}
+
+.game__button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.game__button:hover {
+    background-color: #0056b3;
+}
+
+.game__attempts {
+    color: #888;
+    font-size: 14px;
+}
+
+.game__numbers {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+    color: #555;
+}
+
+.victory {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 10;
+}
+
+.victory.hidden {
+    display: none;
+}
+
+.victory__image {
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.victory__message {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}

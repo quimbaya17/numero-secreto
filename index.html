@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Juego del Número Secreto</title>
+</head>
+<body>
+    <div class="container">
+        <div class="game">
+            <h1 class="game__title">¡Adivina el Número Secreto!</h1>
+            <p id="message" class="game__message">Ingresa un número entre 1 y 30:</p>
+            <input type="number" id="userInput" class="game__input" min="1" max="30" />
+            <button id="guessButton" class="game__button">Probar</button>
+            <p id="attempts" class="game__attempts"></p>
+            <ul id="selectedNumbers" class="game__numbers"></ul>
+        </div>
+        <!-- Contenedor de victoria -->
+        <div id="victoryContainer" class="victory hidden">
+            <img src="./img/winner.png" alt="¡Ganaste!" class="victory__image" />
+            <p class="victory__message">¡Felicidades! Adivinaste el número secreto.</p>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
